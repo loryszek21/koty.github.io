@@ -16,16 +16,16 @@ body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
 }
-img{
+img {
   max-width: 100%;
-  display: block
+  display: block;
 }
 @import url(//db.onlinewebfonts.com/c/aa2978d6298cf73270ecf91888c157b9?family=Adelle+Condensed);
 
 .hero {
   color: white;
   background-image: url("img/main.jpg");
-  
+
   width: 100%;
   height: 35rem;
   background-repeat: no-repeat;
@@ -48,10 +48,10 @@ p {
   width: 20vw;
 }
 
-.a {
+/* .a {
   height: 20000px;
   background-color: var(--main-color);
-}
+} */
 
 .menu {
   display: flex;
@@ -86,11 +86,12 @@ span {
   width: 60vw;
 }
 #certyfikat {
-  max-width:  50vw;
+  max-width: 50vw;
   margin-top: var(--margin-content);
 }
 
 .karta-kontener {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,8 +104,9 @@ span {
 }
 /* responsywnosc zobaczyc */
 .karta {
-  /* width: calc(25% - 20px); */
-  max-width:  15em;
+  width: 25%;
+  /* width: calc(33% - 100px); */
+
   height: auto;
   background: var(--karta-kolor);
   display: flex;
@@ -117,36 +119,35 @@ span {
   box-shadow: var(--cien);
   flex-wrap: wrap;
 }
-
-.karta > * {
-  padding: 10px;
+.karta-zdjecie {
+  display: flex;
+  justify-content: center;
 }
-
-.karta .karta-zdjecie {
-  height: 15vw;
-  width: 15vw;
-  border: 5px solid;
+.karta-zdjecie img {
   border-radius: 50%;
-  background-position: center center;
-  background-size: cover;
+  /* scale: 0.5; */
+  width: 50%;
 }
-
 .karta .karta-tytul {
   padding: 20px 10px;
   font-size: 1.5rem;
 }
+.karta-star {
+  font-size: 2rem;
+  color: #f9bf3b;
+}
 
-.karta:nth-child(1) .karta-zdjecie {
+/* .karta:nth-child(1) .karta-zdjecie {
   background-image: url(img/AMANDA.jpg);
-}
+} */
 
-.karta:nth-child(2) .karta-zdjecie {
+/* .karta:nth-child(2) .karta-zdjecie {
   background-image: url(img/zdjecie3.jpg);
-}
+} */
 
-.karta:nth-child(3) .karta-zdjecie {
+/* .karta:nth-child(3) .karta-zdjecie {
   background-image: url(img/zdjecie1.jpg);
-}
+} */
 
 .karta > a {
   text-decoration: none;
@@ -192,10 +193,11 @@ footer {
   flex-direction: column;
   row-gap: 0.5rem;
 }
-.contact > :nth-child(-n+3){
-padding-left: 2em;
+.contact > :nth-child(-n + 3) {
+  padding-left: 2em;
 }
-.contact a:link , .contact a:visited{
+.contact a:link,
+.contact a:visited {
   text-decoration: none;
   color: black;
 }
@@ -237,7 +239,7 @@ svg {
   border-radius: 4px;
   padding: 2em;
   box-shadow: var(--cien);
-  column-gap:  6.5rem;
+  column-gap: 6.5rem;
   flex-basis: 50rem;
   flex-grow: 0.5;
   flex-wrap: wrap;
@@ -272,6 +274,6 @@ iframe {
   margin-bottom: 2rem;
 }
 
-.hideme{
+.hideme {
   opacity: 0;
 }
