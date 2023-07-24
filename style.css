@@ -214,6 +214,7 @@ svg {
   width: 40rem;
 }
 
+
 /* kotka */
 .container {
   display: flex;
@@ -229,7 +230,7 @@ svg {
 .card {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   text-align: center;
-  width: 70rem;
+  width: 50%;
   height: auto;
   background: var(--karta-kolor);
   display: flex;
@@ -240,13 +241,18 @@ svg {
   padding: 2em;
   box-shadow: var(--cien);
   column-gap: 6.5rem;
-  flex-basis: 50rem;
+  /* flex-basis: 50rem; */
   flex-grow: 0.5;
   flex-wrap: wrap;
 }
+.card-img {
+  width: 45%;
+  /* height: 1vw; */
+}
 
 .card img {
-  height: 25rem;
+  /* height: 25rem; */
+  width: 100%;
   /* min-height: 25rem; */
   object-fit: cover;
   border-radius: 4px;
@@ -268,12 +274,13 @@ svg {
   text-align: left;
   align-items: start;
   flex-direction: column;
+  width: 45%;
 }
 iframe {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-.hideme {
+/* .hideme {
   opacity: 0;
-}
+} */
